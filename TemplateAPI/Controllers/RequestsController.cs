@@ -17,7 +17,7 @@ namespace TemplateAPI.Controllers
     public class RequestsController : ApiController
     {
         [HttpGet]
-        [Route("api/request")]
+        [Route("https://github.com/swikayd/TemplateAPI/api/request")]
         public List<Request> GetRequest()
         {
             using (var context = new TemplateAPIContext())
@@ -32,7 +32,7 @@ namespace TemplateAPI.Controllers
         }
 
         [HttpPost]
-        [Route("api/request")]
+        [Route("https://github.com/swikayd/TemplateAPI/api/request")]
         public Request Insert([FromBody]Request request)
         {
             using (var context = new TemplateAPIContext())
@@ -47,7 +47,7 @@ namespace TemplateAPI.Controllers
         }
 
         [HttpPut]
-        [Route("api/request")]
+        [Route("https://github.com/swikayd/TemplateAPI/api/request")]
         public Request Update([FromBody]Request request)
         {
             using (var context = new TemplateAPIContext())
@@ -67,7 +67,7 @@ namespace TemplateAPI.Controllers
         }
 
         [HttpDelete]
-        [Route("api/request/{id:int}")]
+        [Route("https://github.com/swikayd/TemplateAPI/api/request/{id:int}")]
         public bool Delete(int id)
         {
             using (var context = new TemplateAPIContext())
@@ -87,7 +87,7 @@ namespace TemplateAPI.Controllers
         }
 
         [HttpGet]
-        [Route("api/request/{id:int}")]
+        [Route("https://github.com/swikayd/TemplateAPI/api/request/{id:int}")]
         public Request GetRequestById(int id)
         {
             using (var context = new TemplateAPIContext())

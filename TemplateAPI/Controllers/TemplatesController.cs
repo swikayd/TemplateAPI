@@ -17,7 +17,7 @@ namespace TemplateAPI.Controllers
     public class TemplatesController : ApiController
     {
         [HttpGet]
-        [Route("api/template")]
+        [Route("https://github.com/swikayd/TemplateAPI/api/template")]
         public List<Template> GetTemplates()
         {
             using (var context = new TemplateAPIContext())
@@ -32,7 +32,7 @@ namespace TemplateAPI.Controllers
         }
 
         [HttpPost]
-        [Route("api/template")]
+        [Route("https://github.com/swikayd/TemplateAPI/api/template")]
         public Template Insert([FromBody]Template template)
         {
             using (var context = new TemplateAPIContext())
@@ -47,7 +47,7 @@ namespace TemplateAPI.Controllers
         }
 
         [HttpPut]
-        [Route("api/template")]
+        [Route("https://github.com/swikayd/TemplateAPI/api/template")]
         public Template Update([FromBody]Template template)
         {
             using (var context = new TemplateAPIContext())
@@ -67,7 +67,7 @@ namespace TemplateAPI.Controllers
         }
 
         [HttpDelete]
-        [Route("api/template/{id:int}")]
+        [Route("https://github.com/swikayd/TemplateAPI/api/template/{id:int}")]
         public bool Delete(int id)
         {
             using (var context = new TemplateAPIContext())
@@ -87,7 +87,7 @@ namespace TemplateAPI.Controllers
         }
 
         [HttpGet]
-        [Route("api/template/{id:int}")]
+        [Route("https://github.com/swikayd/TemplateAPI/api/template/{id:int}")]
         public Template GetRequestById(int id)
         {
             using (var context = new TemplateAPIContext())

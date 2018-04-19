@@ -13,7 +13,7 @@ namespace TemplateAPI.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201804190852297_Initial"; }
+            get { return "201804191601395_Initial"; }
         }
         
         string IMigrationMetadata.Source
